@@ -1,0 +1,479 @@
+@media only screen and (max-width: 768px) {
+
+  /* hero section start */
+
+  .cover-photo {
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+  }
+
+  .iframe-container iframe {
+    height: 1080px;
+    min-width: 100%;
+    margin-top: 50px;
+  }
+
+  .hero-section-container a {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .hero-section-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+    width: 100%;
+    padding-bottom: 30px;
+    background-position: 30% -139px;
+  }
+
+  .hero-section-container .form-container {
+    width: 90%;
+    margin: 40px auto;
+    position: initial;
+  }
+
+  .hero-section-container .left-side .title {
+    font-weight: 800;
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .hero-section-container .left-side .subtitle {
+    font-weight: medium;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+
+  /* royalty program start */
+  .royalty-program-section .stats-container {
+    width: 100%;
+  }
+
+  .royalty-program-section .stats-container .layer {
+    margin: 30px 0;
+  }
+
+  /* rewards card section */
+  .reward-cards-section {
+    margin: 40px 0;
+  }
+
+  .reward-cards-section .heading {
+    font-size: 24px;
+    font-weight: medium;
+    text-align: center;
+    width: 80%;
+    margin: 80px auto 10px;
+  }
+
+
+  .reward-cards-section .cards-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .flip-card {
+    width: 99%;
+  }
+
+  .reward-cards-section .cards-container .card-container {
+    width: 95%;
+    height: 286px;
+    padding-top: 0;
+    margin: 30px auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .reward-cards-section .cards-container .card-container .title {
+    width: 70%;
+    margin: initial auto;
+    font-size: 19px;
+  }
+
+  /* wide card */
+  .widecard-container {
+    height: 250px;
+  }
+
+  .widecard-container .title {
+    color: white;
+    font-size: 19px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .widecard-container .wrapper {
+    top: 60%;
+  }
+
+
+  /* stakeholder */
+  .stakeholders-container {
+    width: 100%;
+    margin: 40px auto 80px;
+  }
+
+  .stakeholders-container .heading {
+    width: 90%;
+    margin: auto;
+    font-size: 24px;
+    margin: 50px auto 30px;
+  }
+
+  .stakeholders-container .relation-card {
+    margin: 30px auto 0;
+    text-align: center;
+  }
+
+  .stakeholders-container .relation-card .title {
+    margin: 30px 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .stakeholders-container .relation-card .info {
+    width: 70%;
+    margin: auto;
+  }
+
+
+  /* campaign section */
+
+  .campaign-section .heading {
+    font-size: 24px;
+    font-weight: medium;
+    text-align: center;
+    width: 80%;
+    margin: 80px auto 20px;
+  }
+
+  .campaign-section .campaign-card {
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .campaign-section .content-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .campaign-card .icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .campaign-section .content-section .title {
+    font-size: 20px;
+    font-weight: medium;
+  }
+
+  .campaign-section .content-section .info {
+    width: 85%;
+    margin: auto;
+    color: var(--grey);
+    font-size: 14px;
+  }
+
+  /* platform section */
+
+  .elevate-cards {
+    margin-top: 0;
+  }
+
+  .platform-container {
+    height: max-content;
+    padding-bottom: 30px;
+  }
+
+  .platform-container .left-side h3 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 80px 0;
+  }
+
+  .platform-container .left-side {
+    height: 148px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .platform-container .right-side {
+    width: 100%;
+    height: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .platform-container .platform-card {
+    margin: 12px auto;
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+  }
+
+  .elevate-cards {
+    padding-left: 0;
+  }
+
+  .platform-container .platform-card img {
+    width: 70px;
+    margin: 20px 0;
+  }
+
+  .platform-container .platform-card .title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+  /* how we do it */
+  .how-wedo-container {
+    margin: 60px auto;
+  }
+
+  .how-wedo-container .heading {
+    text-align: center;
+    margin: 50px 0 30px;
+  }
+
+  .how-wedo-card {
+    width: 98%;
+    height: 259px;
+    margin: 20px 10px;
+    margin-left: 15px;
+    box-shadow: 1px 1px 6px #00000029;
+    border: 1px solid #F7F7F7;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .how-wedo-card .icon {
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;
+  }
+
+  .how-wedo-card .title {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+
+  .how-wedo-card .info {
+    text-align: center;
+    font-size: 14px;
+    color: var(--grey);
+  }
+
+  /* loyalty seactin */
+  .loyalty-campaign-container .heading {
+    font-size: 24px;
+    width: 90%;
+    margin: auto;
+    font-weight: medium;
+    text-align: center;
+  }
+
+  .loyalty-campaign-container .subheading {
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+    color: var(--grey);
+
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .loyalty-campaign-container .loyalty-card .title {
+    font-size: 18px;
+  }
+
+  /* rewards section */
+  .reward-types-container {
+    margin: 40px 0;
+  }
+
+  .reward-types-container .heading {
+    font-size: 24px;
+    font-weight: medium;
+    text-align: center;
+  }
+
+  .reward-types-container .sub-heading {
+    font-size: 16px;
+    text-align: center;
+    color: var(--grey);
+    width: 90%;
+    margin: 20px auto 40px;
+  }
+
+  /* our campaign section */
+
+  .recent-campaigns-container {
+    margin: 40px 0;
+  }
+
+  .recent-campaigns-container .heading {
+    font-weight: medium;
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .recent-campaigns-container .campaign-card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* what people say */
+
+  .what-people-say-container .heading {
+    font-size: 24px;
+    font-weight: medium;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .what-people-say-container .review-content {
+    width: 100%;
+    margin: auto;
+  }
+
+  .what-people-say-container .dialog-box {
+    width: 100%;
+    min-height: max-content;
+    height: 300px;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 1px 1px 30px #00000029;
+    color: var(--grey);
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+
+  /* who are we section */
+
+  .who-are-we-section {
+    margin: 40px 0 80px;
+  }
+
+  .who-are-we-section .heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: medium;
+    margin: 0 0 30px;
+  }
+
+  .who-are-we-section .info {
+    width: 90%;
+    text-align: left;
+    margin: 30px auto 0;
+    color: var(--grey);
+  }
+
+  .who-are-we-section .icon {
+    width: 70%;
+    margin: auto;
+  }
+
+  .who-are-we-section img {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+  }
+
+
+  /* awards section */
+  .achievements-section {
+    margin: 40px 0;
+  }
+
+  .achievements-section .heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: medium;
+    margin: 40px 0;
+  }
+
+  .awards-card .title {
+    font-size: 18px;
+    text-align: left;
+    color: white;
+  }
+
+  .awards-card .info {
+    color: rgba(255, 255, 255, 0.803);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+  }
+
+
+  /* brands section */
+
+  /* .brands-section {
+    height: 144px;
+    background-color: rgba(240, 240, 240, 0.819);
+  }
+
+  .brands-section .brand-card {
+    background: white;
+    width: max-content;
+  }
+
+
+  .brands-section .brand-card img {
+    width: 100%;
+  } */
+
+
+  /* footer */
+
+  footer {
+    height: 200px;
+    /* padding: 50px 0; */
+    background-color: #004D41;
+    color: white;
+  }
+
+  footer .logo {
+    width: 100px;
+  }
+
+  footer .footer-center {
+    height: 94px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-center p {
+    margin: 20px;
+  }
+}

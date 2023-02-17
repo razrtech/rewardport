@@ -1,0 +1,29 @@
+{
+  "name": "rakuten-bank",
+  "version": "1.0.0",
+  "private": true,
+  "description": "rakuten-bank",
+  "author": "Amit Pallauri",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.3",
+    "gatsby": "^4.23.0",
+    "gatsby-plugin-gatsby-cloud": "4.25.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^18.2.0",
+    "react-id-swiper": "^4.0.0",
+    "swiper": "6.8.4"
+  }
+}

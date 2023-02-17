@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --black: #1E2323;
+  --grey: #7A7A7A;
+}
+
+
+/* common */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-more {
+  width: 115px;
+  height: 36px;
+  background-color: #55AE61;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  margin: 30px auto 0;
+}
+
+.show-less {
+  width: 115px;
+  height: 36px;
+  background-color: #AAAAAA;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  margin: 30px auto 0;
+}
+
+/* flipcard section */
+.flip-card {
+  background-color: transparent;
+  width: 95%;
+  height: 400px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  border-radius: 14px;
+}
+
+.flip-card-front .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgb(205 205 210 / 0%) 11.4%, rgb(4 4 4 / 45%) 70.2%);
+  border-radius: 14px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 14px;
+}
+
+.flip-card-back {
+  background-color: #FAFAFB;
+  color: var(--grey);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  line-height: 15px;
+  transform: rotateY(180deg);
+}
+
+/* hero section start */
+.hero-section-container {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 616px;
+}
+
+.cover-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 2000px #0006246f;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.loyalty-hero {
+  background: url("../images/hero/loyalty-program.webp");
+  background-size: cover;
+}
+
+.sales-hero {
+  background: url("../images/hero/sales-promotion.webp");
+  background-size: cover;
+}
+
+.channel-hero {
+  background: url("../images/hero/channel-partner.webp");
+  background-size: cover;
+}
+
+.hero-section-container .container {
+  height: 100%;
+}
+
+.hero-section-container #logo {
+  width: 182px;
+}
+
+.hero-section-container .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+  height: 100%;
+  width: 85%;
+  position: relative;
+}
+
+.hero-section-container .form-container {
+  width: 85%;
+  position: absolute;
+  bottom: 0%;
+  right: 15%;
+}
+
+.hero-section-container .left-side .title {
+  font-weight: 900;
+  font-size: 37px;
+  color: white;
+  margin-top: 40px;
+}
+
+.hero-section-container .left-side .subtitle {
+  font-weight: medium;
+  font-size: 34px;
+  color: #FFEA4A;
+
+}
+
+.hero-section-container .form-container {
+  background: white;
+  width: 368px;
+  padding: 40px;
+}
+
+.hero-section-container .form-container .title {
+  font-size: 24px;
+  font-weight: medium;
+}
+
+.hero-section-container .form-container .subtitle {
+  font-size: 15px;
+  color: var(--grey);
+}
+
+.hero-section-container .form-container .form-body {
+  margin-top: 30px;
+}
+
+.hero-section-container .form-container .form-body .form-label {
+  font-size: 14px;
+  color: var(--black);
+  margin-top: 15px
+}
+
+.hero-section-container .form-container .form-body input {
+  background-color: #F7F7F7;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  color: #C4C4C4;
+}
+
+.hero-section-container .form-container .form-body button {
+  width: 100%;
+  background-color: #4E905C;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  margin-top: 30px;
+}
+
+.iframe-container iframe {
+  min-width: 500px;
+  margin-top: 50px;
+  height: 800px;
+}
+
+
+/* royalty program start */
+.royalty-program-section {
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
+
+.royalty-program-section .stats-container {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
+.royalty-program-section .stats-container .stats-value {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.royalty-program-section .stats-container .stats-label {
+  font-size: 24px;
+  font-weight: medium;
+}
+
+.royalty-program-section .stats-container .stats-info {
+  width: 70%;
+  margin: auto;
+  font-size: 12px;
+  color: var(--grey)
+}
+
+/* rewards card section */
+.reward-cards-section {
+  margin: 40px 0;
+}
+
+.reward-cards-section .heading {
+  font-size: 36px;
+  font-weight: medium;
+  text-align: center;
+  width: 50%;
+  margin: 80px auto 40px;
+}
+
+.reward-cards-section .cards-container {
+  width: 75%;
+  margin: auto;
+}
+
+.reward-cards-section .cards-container .card-container {
+  width: 337px;
+  height: 286px;
+  padding-top: 80px;
+  margin-top: 30px;
+  border-radius: 14px;
+}
+
+.reward-cards-section .cards-container .cards-shadow {
+  box-shadow: 0px 0px 18px #0000001F;
+}
+
+.reward-cards-section .cards-container .cards-border {
+  border-bottom: 7px solid #55AE61;
+  background-color: #FAFAFB;
+}
+
+.reward-cards-section .cards-container .card-container .title {
+  width: 80%;
+  margin: 15px auto;
+  font-size: 24px;
+  font-weight: medium;
+  text-align: center;
+}
+
+.reward-cards-section .cards-container .card-container .info {
+  font-size: 14px;
+  width: 80%;
+  margin: auto;
+  font-weight: medium;
+  color: var(--grey);
+  text-align: center;
+}
+
+/* wide card */
+.widecard-container {
+  width: 100%;
+  height: 201px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../images/bg-2.webp");
+  box-shadow: inset 0 0 0 2000px #000000cf;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  position: relative;
+}
+
+.widecard-container .title {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+/* animation */
+.widecard-container .wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.widecard-container a {
+  margin-top: 50px;
+  /* padding: 15px 20px; */
+  font-weight: 600;
+  border: none;
+  background-color: white;
+  display: block;
+  width: max-content;
+  padding: 5px 25px;
+  /* height: 0px; */
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.widecard-container a span {
+  position: relative;
+  z-index: 2;
+}
+
+.widecard-container a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #55AE61;
+  transition: all .35s;
+  border: 0;
+}
+
+.widecard-container a:hover {
+  color: #fff;
+  border: 0;
+}
+
+.widecard-container a:hover:after {
+  width: 100%;
+}
+
+/* stakeholder */
+.stakeholders-container {
+  width: 70%;
+  margin: 40px auto 80px;
+}
+
+.stakeholders-container .heading {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  font-size: 36px;
+  font-weight: medium;
+  margin: 80px auto 40px;
+}
+
+.stakeholders-container .relation-card {
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.stakeholders-container .relation-card .icon {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 10px auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stakeholders-container .relation-card .icon img {
+  width: 100%;
+}
+
+.stakeholders-container .relation-card .title {
+  margin: 30px 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stakeholders-container .relation-card .info {
+  color: var(--grey);
+}
+
+/* campaign section */
+
+.campaign-section {
+  margin-top: 40px;
+  /* width: 70%; */
+  margin: 30px auto 50px;
+}
+
+.campaign-section .heading {
+  font-size: 36px;
+  font-weight: medium;
+  text-align: center;
+  width: 40%;
+  margin: 80px auto 40px;
+}
+
+.campaign-section .subheading {
+  max-width: 715px;
+  text-align: center;
+  font: normal normal normal 18px/24px Roboto;
+  letter-spacing: 0px;
+  color: #7A7A7A;
+  opacity: 1;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.campaign-section .campaign-card {
+  margin: 30px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.campaign-section .content-section {
+  width: 85%;
+}
+
+.campaign-card .icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.campaign-card .icon img {
+  width: 100%;
+}
+
+.campaign-section .content-section .title {
+  font-size: 24px;
+  font-weight: medium;
+}
+
+.campaign-section .content-section .info {
+  width: 80%;
+  color: var(--grey);
+  font-size: 14px;
+}
+
+/* platform section */
+
+.platform-container {
+  height: 596px;
+  background: url("../images/bg-1.webp");
+  box-shadow: inset 0 0 0 2000px #020006e3;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 596px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.platform-container .left-side h3 {
+  color: white;
+  font-size: 32px;
+}
+
+.platform-container .left-side {
+  height: 596px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.platform-container .right-side {
+  width: 100%;
+  height: 596px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.platform-container .platform-card {
+  margin: 20px 0;
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+}
+
+.platform-container .platform-card img {
+  width: 60px;
+  height: 60px;
+  margin: 15px 0;
+}
+
+.platform-container .platform-card .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.elevate-cards {
+  margin-top: 50px;
+}
+
+/* how we do it */
+.how-wedo-container {
+  margin: 60px auto;
+}
+
+.how-wedo-container .heading {
+  text-align: center;
+  margin: 80px 0 40px;
+}
+
+.how-wedo-card {
+  width: 95%;
+  height: 259px;
+  margin: 20px 10px;
+  box-shadow: 1px 1px 6px #00000029;
+  border: 1px solid #F7F7F7;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.how-wedo-card .icon {
+  width: 89px;
+  height: 89px;
+  border-radius: 50%;
+}
+
+.how-wedo-card .icon img {
+  width: 100%;
+}
+
+.how-wedo-card .title {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.how-wedo-card .info {
+  text-align: center;
+  font-size: 14px;
+  color: var(--grey);
+}
+
+/* loyalty section */
+.loyalty-campaign-container {
+  margin-top: 60px;
+}
+
+.loyalty-campaign-container .heading {
+  font-size: 36px;
+  font-weight: medium;
+  text-align: center;
+}
+
+.loyalty-campaign-container .subheading {
+  font-size: 14px;
+  width: 40%;
+  margin: auto;
+  color: var(--grey);
+
+  font-weight: normal;
+  text-align: center;
+}
+
+.loyalty-campaign-container .loyalty-campaign-content {
+  margin: 40px 0;
+}
+
+.loyalty-campaign-container .loyalty-card {
+  width: 90%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.loyalty-campaign-container .loyalty-card img {
+  width: 60px;
+  height: 60px;
+}
+
+.loyalty-campaign-container .loyalty-card .title {
+  font-size: 22px;
+  line-height: 25px;
+  margin-top: 10px;
+  font-weight: medium;
+}
+
+.loyalty-campaign-container .loyalty-card .info {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+/* rewards section */
+.reward-types-container {
+  margin: 40px 0;
+}
+
+.reward-types-container .heading {
+  font-size: 36px;
+  font-weight: medium;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.reward-types-container .sub-heading {
+  font-size: 18px;
+  text-align: center;
+  color: var(--grey);
+  width: 50%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.rewards-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.rewards-card .info {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: white;
+  font-size: 1.3em;
+  width: max-content;
+}
+
+/* our campaign section */
+
+.recent-campaigns-container {
+  margin: 80px 0 40px;
+}
+
+.recent-campaigns-container .heading {
+  font-weight: medium;
+  font-size: 36px;
+  text-align: center;
+  margin: 80px 0 40px;
+}
+
+.recent-campaigns-container .campaign-card img {
+  width: 420px;
+  height: 250px;
+}
+
+/* what people say */
+.what-people-say-container {
+  margin: 80px 0 60px;
+}
+
+.what-people-say-container .heading {
+  font-size: 36px;
+  font-weight: medium;
+  margin-bottom: 30px;
+  text-align: center;
+  margin: 80px 0 40px;
+}
+
+.what-people-say-container .review-content {
+  width: 80%;
+  margin: auto;
+}
+
+.what-people-say-container .dialog-box {
+  /* width: 100%; */
+  height: 200px;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 1px 1px 30px #00000029;
+  color: var(--grey);
+  font-weight: normal;
+  font-size: 16px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.what-people-say-container .arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 15px solid white;
+  position: relative;
+  top: 0;
+  left: 2rem;
+}
+
+.what-people-say-container .reviewer-section {
+  display: flex;
+  margin-right: 40px;
+}
+
+.what-people-say-container .reviewer-section img {
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+}
+
+.what-people-say-container .reviewer-section {
+  margin-top: 30px;
+}
+
+.what-people-say-container .reviewer-section .user .username {
+  font-size: 20px;
+  font-weight: 500;
+  color: #6A09DD;
+}
+
+.what-people-say-container .reviewer-section .user .position {
+  color: var(--grey);
+}
+
+/* who are we section */
+
+.who-are-we-section {
+  margin: 80px 0 120px;
+}
+
+.who-are-we-section .heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: medium;
+  margin: 80px 0 40px;
+}
+
+.who-are-we-section .info {
+  color: var(--grey);
+}
+
+.who-are-we-section .icon {
+  width: 70%;
+}
+
+.who-are-we-section img {
+  width: 100%;
+  height: 100%;
+}
+
+/* brands section */
+
+.brands-section {
+  height: 144px;
+  background-color: rgba(240, 240, 240, 0.819);
+}
+
+.brands-section .brand-card {
+  background: white;
+  /* width: 100%; */
+}
+
+
+/* .brands-section img {
+  width: 200px;
+} */
+
+
+/* awards section */
+.achievements-section {
+  margin: 80px 0 40px;
+}
+
+.achievements-section .heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: medium;
+  margin: 80px 0 40px;
+}
+
+
+.awards-card {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  box-shadow: inset 0 0 0 2000px #0006246f;
+}
+
+.awards-card .overlay {
+  background: linear-gradient(181deg, rgb(114 114 117 / 34%) 11.4%, rgb(31 31 35 / 62%) 70.2%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.awards-card img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.awards-card .awards-content {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.awards-card .title {
+  font-size: 18px;
+  text-align: left;
+  color: white;
+}
+
+.awards-card .info {
+  color: rgba(255, 255, 255, 0.803);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+
+footer {
+  height: 94px;
+  background-color: #004D41;
+  color: white;
+}
+
+footer .logo {
+  width: 100px;
+}
+
+footer .footer-center {
+  height: 94px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-center p {
+  margin: 0;
+}
+
+/* swiper */
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '' !important;
+
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '' !important;
+}
+
+.swiper-button-prev {
+  background: url(../images/back-arrow.svg);
+  width: 54px;
+  height: 54px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-button-next {
+  background: url(../images/next-arrow.svg);
+  width: 54px;
+  height: 54px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-wrapper-program {
+  margin-bottom: 20px;
+}
