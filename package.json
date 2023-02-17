@@ -25,5 +25,14 @@
     "react-dom": "^18.2.0",
     "react-id-swiper": "^4.0.0",
     "swiper": "6.8.4"
+  },
+  "devDependencies": {
+    "@sideway/formula": "3.0.1",
+    "decode-uri-component": "0.2.2",
+    "engine.io": "5.2.1",
+    "http-cache-semantics": "^4.1.1",
+    "json5": "2.2.2",
+    "loader-utils": "3.2.1",
+    "ua-parser-js": "1.0.33"
   }
 }
